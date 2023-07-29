@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -824,6 +824,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1025923397}
   - component: {fileID: 1025923398}
+  - component: {fileID: 1025923399}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -857,7 +858,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13c87c18af6307148bba91271dd0ca24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerCanvas: {fileID: 0}
+--- !u!114 &1025923399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025923396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc07457694dc0e94687a31f0c5a1d314, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1158959330
 GameObject:
   m_ObjectHideFlags: 0
@@ -989,7 +1001,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13c87c18af6307148bba91271dd0ca24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerCanvas: {fileID: 822983452}
 --- !u!4 &1223141576
 Transform:
   m_ObjectHideFlags: 0
@@ -1059,8 +1070,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e812ca80e8d45a4c890594f81d67168, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnCube: {fileID: 209871035946075441, guid: d78e3d2afa4fb784db48655153458e79,
-    type: 3}
+  spawnCube: {fileID: 1401776662}
   difficulty: 40
 --- !u!1 &1401776662 stripped
 GameObject:

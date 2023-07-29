@@ -9,7 +9,7 @@ public class PlayerControls : MonoBehaviour
     public Rigidbody rb;
 
     public GameObject gameOverCanvas;
-    Rigidbody rb;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -34,7 +34,6 @@ public class PlayerControls : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        Time.timeScale = 0;
-        gameOverCanvas.SetActive(true);
+        SceneManager.LoadScene(0);
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
-    public GameObject timerCanvas;
+   // public GameObject timerCanvas;
 
     private Text timerText;
     private int timerCount;
@@ -13,7 +13,7 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timerCanvas.SetActive(true);
+        //timerCanvas.SetActive(true);
         StartCoroutine(CountTime());
         Time.timeScale = 1f;
         timerText = GameObject.Find("Score").GetComponent<Text>();
